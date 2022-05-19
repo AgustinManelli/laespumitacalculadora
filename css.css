@@ -1,0 +1,103 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #272626;
+    overflow:hidden;
+    font-family: "Raleway";
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator__box {
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255,255,255,0.5);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+.calculator__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.laespumitapng{
+    width: 17%;
+}
+.calculato__body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.calculator__input1{
+    position: relative;
+    width: 30%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.calculator__input2{
+    position: relative;
+    width: 30%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.input{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(255,255,255,0.8);
+    backdrop-filter: blur(20px);
+    border-style: none;
+    text-align: center;
+    box-shadow: 0 5px 5px 0px rgb(0,0,0,0.1);
+}
+
+.calculator__input1::after{
+    content: "$";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    height: 100%;
+    padding-left: 10px;
+    box-shadow: -2px 0px 5px 0px rgb(0,0,0,0.1);
+}
+
+.calculator__input2::after{
+    content: "%";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    height: 100%;
+    padding-left: 10px;
+    box-shadow: -2px 0px 5px 0px rgb(0,0,0,0.1);
+}
+
+.result h2{
+    font-size: 1.5rem;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}

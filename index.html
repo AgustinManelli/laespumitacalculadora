@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La espumita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+    <link rel="icon" href="assets/laespumita.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <Section class="calculator">
+        <div class="calculator__box">
+            <div class="calculator__title">
+                <img class="laespumitapng" src="assets/laespumita.png" alt="">
+                <H1>Calculadora</H1>
+            </div>
+            <div class="calculato__body">
+                <div class="calculator__input1">
+                    <input type="number" class="input peso" placeholder="Ingrese aqui" id="input__peso" oninput="calculo()">
+                </div>
+                <div class="calculator__input2">
+                    <input type="number" class="input pj" placeholder="Ingrese porcentaje" id="input__porcentaje" oninput="calculo()">
+                </div>
+            </div>
+            <div class="result">
+                <h2>Precio</h2>
+                <input type="number" class="input pj" placeholder="Resultado" readonly disabled value="" id="input__result">
+            </div>
+        </div>
+    </Section>
+</body>
+</html>
